@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,9 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #1A237E, #121212);
+            background: linear-gradient(135deg, #1A237E, #121212, #29002a);
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
             margin: 0;
             padding: 30px;
             color: #E0E0E0;
@@ -46,6 +48,18 @@
             100% {
                 transform: translate(100vw, 100vh) scale(0.5);
                 opacity: 0;
+            }
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
             }
         }
 
@@ -99,7 +113,7 @@
 
         li:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
         }
 
         a {
@@ -124,9 +138,9 @@
 
     <h2>Biblioteca de alimentos</h2>
 
-    <input type="text" id="search" placeholder="Buscar tabela...">
+    <input type="text" id="search" placeholder="Buscar tabela..." aria-label="Buscar tabelas de alimentos">
 
-    <ul id="lista-tabelas">
+    <ul id="lista-tabelas" role="list">
         <li><a href="https://drive.google.com/file/d/1sYp0ZWIo21ZmVw5jmBLnd8GuxzU3FQuh/view?usp=drivesdk" target="_blank">tabela 1.01 - Milho triturado</a></li>
         <li><a href="https://drive.google.com/file/d/15c_oG4k4eJwgSMmmsY7DglGLjMN05GSv/view?usp=drivesdk" target="_blank">tabela 1.02 - Sorgo</a></li>
         <li><a href="https://drive.google.com/file/d/1m_1KphUPg8lp82Tjd0-66_6sc6XWY22c/view?usp=drivesdk" target="_blank">tabela 1.03 - Ração para galo reprodutor</a></li>
@@ -140,7 +154,7 @@
         <li><a href="https://drive.google.com/file/d/11xmlJJ61Xs7mzjXTttg0msS5LQvKY7yH/view?usp=sharing" target="_blank">tabela 1.11 - Bagaço de cana</a></li>
         <li><a href="https://drive.google.com/file/d/1dwdmiCpKfsX6iJ8wYPcl4l1z2881BGI_/view?usp=sharing" target="_blank">tabela 1.12 - DDG</a></li>
         <li><a href="https://drive.google.com/file/d/1kcJF35XPybcx1C3WRsWygcNyZxB3Qgfw/view?usp=sharing" target="_blank">tabela 1.13 - Farinha de peixe</a></li>
-        <li><a href=https://drive.google.com/file/d/1hb4st2zLKqlnNarxKlq18kYlxOSKXvnm/view?usp=sharing" target="_blank">tabela 1.14 - Centeio</a></li>
+        <li><a href="https://drive.google.com/file/d/1hb4st2zLKqlnNarxKlq18kYlxOSKXvnm/view?usp=sharing" target="_blank">tabela 1.14 - Centeio</a></li>
         <li><a href="https://drive.google.com/file/d/12_9V-Cwf6UI8vQPRAokyawwge4lvmVeJ/view?usp=sharing" target="_blank">tabela 1.15 - Ureia</a></li>
         <li><a href="https://drive.google.com/file/d/1sFvdTvto8yaBzxXhvLDEG41VKMHszQ38/view?usp=sharing" target="_blank">tabela 1.16 - Ração seca premium para cães</a></li>
         <li><a href="https://drive.google.com/file/d/15dyBTeNW1lazclNNym-JqlreUkHyGg9z/view?usp=sharing" target="_blank">tabela 1.17 - Farelo de peixe</a></li>
@@ -156,27 +170,7 @@
         <li><a href="https://drive.google.com/file/d/1YyWmlgdpm-v0DvOrqSozncNpGHdx5AWH/view?usp=sharing" target="_blank">tabela 1.27 - Caroço de algodão</a></li>
         <li><a href="https://drive.google.com/file/d/12ueO0Wx78TdAZ5F1nCwqdHZAk3QXnv_x/view?usp=sharing" target="_blank">tabela 1.28 - Farinha de soja</a></li>
         <li><a href="https://drive.google.com/file/d/1M-MDxLl1-A3vpV4VRh50W6IX76OcgxSV/view?usp=sharing" target="_blank">tabela 1.29 - Milho</a></li>
-        <li><a href="https://drive.google.com/file/d/1NSXjCuE2X-2iPgyfzuhYg-r91SsaobhB/view?usp=sharing" target="_blank">tabela 1.30 - Ração para peixe (Alta suplementada)</a></li>
-        <li><a href="https://drive.google.com/your-planilha-31-link" target="_blank">tabela 1.31</a></li>
-        <li><a href="https://drive.google.com/your-planilha-32-link" target="_blank">tabela 1.32</a></li>
-        <li><a href="https://drive.google.com/your-planilha-33-link" target="_blank">tabela 1.33</a></li>
-        <li><a href="https://drive.google.com/your-planilha-34-link" target="_blank">tabela 1.34</a></li>
-        <li><a href="https://drive.google.com/your-planilha-35-link" target="_blank">tabela 1.35</a></li>
-        <li><a href="https://drive.google.com/your-planilha-36-link" target="_blank">tabela 1.36</a></li>
-        <li><a href="https://drive.google.com/your-planilha-37-link" target="_blank">tabela 1.37</a></li>
-        <li><a href="https://drive.google.com/your-planilha-38-link" target="_blank">tabela 1.38</a></li>
-        <li><a href="https://drive.google.com/your-planilha-39-link" target="_blank">tabela 1.39</a></li>
-        <li><a href="https://drive.google.com/your-planilha-40-link" target="_blank">tabela 1.40</a></li>
-        <li><a href="https://drive.google.com/your-planilha-41-link" target="_blank">tabela 1.41</a></li>
-        <li><a href="https://drive.google.com/your-planilha-42-link" target="_blank">tabela 1.42</a></li>
-        <li><a href="https://drive.google.com/your-planilha-43-link" target="_blank">tabela 1.43</a></li>
-        <li><a href="https://drive.google.com/your-planilha-44-link" target="_blank">tabela 1.44</a></li>
-        <li><a href="https://drive.google.com/your-planilha-45-link" target="_blank">tabela 1.45</a></li>
-        <li><a href="https://drive.google.com/your-planilha-46-link" target="_blank">tabela 1.46</a></li>
-        <li><a href="https://drive.google.com/your-planilha-47-link" target="_blank">tabela 1.47</a></li>
-        <li><a href="https://drive.google.com/your-planilha-48-link" target="_blank">tabela 1.48</a></li>
-        <li><a href="https://drive.google.com/your-planilha-49-link" target="_blank">tabela 1.49</a></li>
-        <li><a href="https://drive.google.com/your-planilha-50-link" target="_blank">tabela 1.50</a></li>
+        <li><a href="https://drive.google.com/file/d/1NSXjCuE2X-2iPgyfzuhYg-r91SsaobhB/view?usp=sharing" target="_blank">tabela 1.30 - Ração para peixe (Altamente suplementada)</a></li>
     </ul>
 
     <script>
@@ -185,13 +179,13 @@
         for (let i = 0; i < 40; i++) {
             const particle = document.createElement('div');
             particle.classList.add('particle');
-            particle.style.top = ${Math.random() * 100}%;
-            particle.style.left = ${Math.random() * 100}%;
-            particle.style.animationDelay = ${Math.random() * 10}s;
-            particle.style.animationDuration = ${Math.random() * 15 + 5}s;
+            particle.style.top = `${Math.random() * 100}%`;
+            particle.style.left = `${Math.random() * 100}%`;
+            particle.style.animationDelay = `${Math.random() * 10}s`;
+            particle.style.animationDuration = `${Math.random() * 15 + 5}s`;
             particlesContainer.appendChild(particle);
         }
-    
+
         // Filtro de busca
         document.getElementById('search').addEventListener('input', function () {
             const term = this.value.toLowerCase();
